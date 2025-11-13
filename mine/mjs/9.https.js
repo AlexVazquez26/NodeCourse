@@ -1,9 +1,11 @@
 const http = require('node:http');
-const { findAvailablePort } = require('./10.freeport.js');
+const { findAvailablePort } = require('./10.freeport-excersice.js');
 
-const server = http.createServer((req, resp) => {
+const desiredPort = process.env.PORT ?? 3000;
+
+const server = http.createServer((req, res) => {
   console.log('Request recieved');
-  resp.end('Hola mundo');
+  res.end('Hola Mundo'); //clausula de envío
 });
 
 //Utiliza un puerto, en especifico
@@ -19,9 +21,8 @@ const server = http.createServer((req, resp) => {
 //     `Server listening on port: http://localhost:${server.address().port}`
 //   );
 // });
-
-findAvailablePort(3000).then((port) => {
+findAvailablePort(desiredPort).then((port) => {
   server.listen(port, () => {
-    console.log(`Server listening on port: http://localhost:${port}`);
+    console.log(`Server listening on http://localhost:${port}`);
   });
 });
