@@ -1,0 +1,34 @@
+{
+  "name": "course-node",
+  "version": "1.0.0",
+  "description": "The Best Course of Node",
+  "keywords": [
+    "course",
+    "node",
+    "node.js"
+  ],
+  "homepage": "https://github.com/AlexVazquez26/NodeCourse#readme",
+  "bugs": {
+    "url": "https://github.com/AlexVazquez26/NodeCourse/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexVazquez26/NodeCourse.git"
+  },
+  "license": "ISC",
+  "author": "Alejandro Vazquez Lopez Arce",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "picocolors": "1.1.1"
+  },
+  "devDependencies": {
+    "standard": "17.1.2"
+  },
+  "eslintConfig": {
+    "extends": "standard"
+  }
+}
